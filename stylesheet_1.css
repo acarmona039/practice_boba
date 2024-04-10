@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+/*colors
+brown HEX- #7A3325(122,51,37)
+background HEX- #FEF0E6 (254,240,230)
+olive HEX- #5B6B0A (91,107,10)
+*/
+
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+
+.main_nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background: #5B6B0A;
+    padding: .3em;
+    margin: 0;
+}
+
+.main_nav a{
+    color: #7A3325;
+    padding: 60px 40px;
+    text-decoration: none;
+}
+.main_nav a:hover{
+    background-color: white;
+    color: #5B6B0A;
+}
+
+li.logo {
+    margin-right: auto;
+}
+
+.hero_image{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/coffee_shop.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero_header{
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 20px;
+}
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: #5B6B0A;
+    background-color: #FEF0E6;
+
+}
+
+h2 {
+    font: bold 1.2em Times, serif;
+    text-transform: uppercase;
+    color: #581d1d;
+    letter-spacing: .4em;
+
+
+}
+
+h1 {
+    font: bold 2.2em Times, serif;
+    color: #5B6B0A;
+    text-shadow: .05em .05em .1em gray;
+
+}
+
+
+strong {
+    font-style: italic;
+}
+ 
+img { max-width: 100%;}
+
+
+
+#index_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    'welcome        welcome         welcome'
+    'shop           shop            shop'
+    'fact1          fact2           fact3'
+    'bigimg         bigimg          img_text'
+    'about          about           about'
+    'product1       product2        product3'
+    'product4       product4        product4'
+    'review         review          review';
+
+justify-items: center;
+background-color: white;
+margin: 0 auto;
+}
+
+#img_text {
+    grid-area: img_text;
+
+    padding: 60px 0px 60px 0px;
+
+}
+
+#review {
+    grid-area: review;
+    object-fit: cover;
+    text-align: left;
+    padding: 10px;
+}
+
+#product3 {
+    grid-area: product3;
+    object-fit: cover;
+    text-align: center;
+}
+
+#product2 {
+    grid-area: product2;
+    object-fit: cover;
+    text-align: center;
+}
+
+#product1 {
+    grid-area: product1;
+    object-fit: cover;
+    text-align: center;
+}
+
+#product4 {
+    grid-area: product4;
+    object-fit: cover;
+    text-align: center;
+}
+
+
+#fact3 {
+    grid-area: fact3;
+    object-fit: cover;
+    text-align: center;
+}
+
+#fact2 {
+    grid-area: fact2;
+    object-fit: cover;
+    text-align: center;
+}
+
+#fact1 {
+    grid-area: fact1;
+    object-fit: cover;
+    text-align: center;
+}
+
+#about {
+    grid-area:about;
+
+}
+
+#bigimg {
+    grid-area: bigimg;
+    object-fit: cover;
+}
+
+#welcome {
+    grid-area: welcome;
+    object-fit: cover;
+}
+
+#welcome {
+    margin: 0px 0px 0px 0px;
+    padding: 60px 0px 60px 0px;
+}
+
+#fact1, #fact2, #fact3 {
+    margin: 20px;
+}
+
+#product1, #product2, #product3 {
+    margin: 40px;
+}
+
+#shop {
+    grid-area: shop;
+    object-fit: cover;
+    padding:0px 0px 80px 0px;
+}
+
+.header {
+    font: bold 1.2em Times, serif;
+    text-transform: uppercase;
+    color: #7A3325;
+    letter-spacing: .4em;
+
+}
+
+footer {
+    background-color: #5B6B0A;
+    color: #7A3325;
+    text-align:center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+
+/*responsive gallery*/
+
+.beverage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+.treat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+.snacks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 10px;
+    padding-bottom: 20px;
+}
